@@ -1,0 +1,7 @@
+.menu-open {
+  transition: 0.3s all;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  margin-top: 2.5rem;
+  height: auto;
+}
