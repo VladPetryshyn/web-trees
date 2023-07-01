@@ -19,6 +19,9 @@ export default function RootLayout({
   const user = getUser();
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${inter.className} bg-light-bg flex flex-col`}>
         <header
           className="bg-light-bg2 w-full flex flex-col rounded-r-2xl rounded-l-2xl sticky top-0 align-center p-7 flex-1">
