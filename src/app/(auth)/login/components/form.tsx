@@ -20,7 +20,10 @@ export const LoginForm = () => {
   const onSubmit: SubmitHandler<FormI> = async (body) => {
     const { data, errors } = await dataFetcher("/users/authenticate", "post", body)
 
-    if (data) return router.replace("/trees")
+    if (data) {
+      router.refresh()
+      return router.replace("/trees")
+    }
 
     register("error")
     Object.keys(errors).forEach((key) => {
